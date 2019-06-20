@@ -9,13 +9,14 @@ source = {
 build = {
     type = "builtin",
     modules = {
-        ["atemlib"] = "AtemLib.lua",
-        ["atemlib.cmd"] = "AtemLib/CMD.lua",
-        ["atemlib.events"] = "AtemLib/Events.lua"
+        ["atemlib"] = "atemlib.lua",
+        ["atemlib.cmd"] = "atemlib/cmd.lua",
+        ["atemlib.events"] = "atemlib/events.lua"
     }
 
 }
 
 dependencies = {
 	"lua >= 5.1",
+    "luasocket",
 }

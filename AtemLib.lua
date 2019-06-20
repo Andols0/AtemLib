@@ -5,8 +5,8 @@ local ATEM = {}
 
 local socket = require("socket")
 
-local CMD = require("AtemLib.CMD")
-local Events = require("AtemLib.Events") --This is a collection of functions that takes the raw return from the mixer and returns separated values
+local CMD = require("atemlib.cmd")
+local Events = require("atemlib.events") --This is a collection of functions that takes the raw return from the mixer and returns separated values
 local tinsert = table.insert
 local tremove = table.remove
 local strchar = string.char
