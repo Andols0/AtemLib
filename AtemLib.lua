@@ -262,7 +262,7 @@ function ATEM.Connect(ip,callback,forever)
 end
 
 function ATEM.Main()
-	local canread = socket.select(ATEMS,nil,0.01)
+	local canread = socket.select(ATEMS,nil,0)
 	for _,Mixer in ipairs(canread) do
 		local data = Mixer:receive()
 		local Conn = Connections[Mixer]
